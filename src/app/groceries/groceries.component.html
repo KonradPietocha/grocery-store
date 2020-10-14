@@ -1,0 +1,9 @@
+<h2>{{comestible.name | uppercase}} Details</h2>
+<div><span>id: </span>{{comestible.id}}</div>
+<div><span>name: </span>{{comestible.name}}</div>
+<div><span>price: </span>{{comestible.price * comestible.quantity}}</div>
+<div>
+  <label>quantity: 
+    <input [(ngModel)]="comestible.quantity" placeholder="quantity"/>
+  </label>
+</div>
