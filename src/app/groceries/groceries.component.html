@@ -1,15 +1,25 @@
-<h2>Groceries list</h2>
+<h2>Products:</h2>
 <ul class="groceries">
-  <li *ngFor="let product of products">
-    <span class="badge">{{product.id}}</span> {{product.name}}
+  <li 
+    *ngFor="let product of products"
+    [class.selected]="product === selectedProduct" 
+    (click)="onSelect(product)">
+    <span class="badge badge-id">{{product.id}}</span> {{product.name}}
+    <span class="badge badge-price">{{product.price}} PLN</span>
   </li>
 </ul>
-<h2>{{comestible.name | uppercase}} Details</h2>
-<div><span>id: </span>{{comestible.id}}</div>
-<div><span>name: </span>{{comestible.name}}</div>
-<div><span>price: </span>{{comestible.price * comestible.quantity}}</div>
-<div>
-  <label>quantity: 
-    <input [(ngModel)]="comestible.quantity" placeholder="quantity"/>
-  </label>
+<div *ngIf="selectedProduct" class="selected-product">
+  <h2>{{selectedProduct.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedProduct.id}}</div>
+  <div><span>name: </span>{{selectedProduct.name}}</div>
+  <div><span>price: </span>{{selectedProduct.price * selectedProduct.quantity}}</div>
+  <div>
+    <label>quantity: 
+      <input 
+        [(ngModel)]="selectedProduct.quantity" 
+        placeholder="quantity" 
+        type="number" 
+        autofocus/>
+    </label>
+  </div>
 </div>

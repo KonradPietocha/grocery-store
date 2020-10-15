@@ -1,10 +1,17 @@
+h2 {
+  color:#006420;
+}
 .groceries {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
     width: 15em;
+    color:#43b649;
   }
   .groceries li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
     position: relative;
     left: 0;
@@ -21,7 +28,8 @@
   }
   .groceries li.selected {
     background-color: #CFD8DC;
-    color: white;
+    color:#006420;
+    border: 1px solid #006420;
   }
   .groceries li.selected:hover {
     background-color: #BBD8DC;
@@ -32,12 +40,20 @@
     font-size: small;
     color: white;
     padding: 0.8em 0.7em 0 0.7em;
-    background-color:#405061;
+    background-color:#006420;
     line-height: 1em;
     position: relative;
-    left: -1px;
-    top: -4px;
+  }
+  .groceries .badge-id {
     height: 1.8em;
-    margin-right: .8em;
+    width: 1em;
     border-radius: 4px 0 0 4px;
   }
+  .groceries .badge-price {
+    height: 1.8em;
+    width: 4em;
+    border-radius: 0 4px 4px 0;
+  }
+.selected-product {
+  color:#006420;
+}

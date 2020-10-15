@@ -9,14 +9,12 @@ import { PRODUCTS } from '../mock-products';
 })
 export class GroceriesComponent implements OnInit {
 
-  comestible: Product = {
-    id: 1,
-    name: 'sausage',
-    price: 25,
-    quantity: 1
-  };
-
   products = PRODUCTS;
+  selectedProduct: Product;
+
+  onSelect(product: Product): void {
+    this.selectedProduct = product;
+  }
 
   constructor() { }
 
