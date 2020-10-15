@@ -1,3 +1,9 @@
+<h2>Groceries list</h2>
+<ul class="groceries">
+  <li *ngFor="let product of products">
+    <span class="badge">{{product.id}}</span> {{product.name}}
+  </li>
+</ul>
 <h2>{{comestible.name | uppercase}} Details</h2>
 <div><span>id: </span>{{comestible.id}}</div>
 <div><span>name: </span>{{comestible.name}}</div>
