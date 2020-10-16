@@ -1,0 +1,15 @@
+<div *ngIf="product" class="selected-product">
+  <h2>{{product.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{product.id}}</div>
+  <div><span>name: </span>{{product.name}}</div>
+  <div><span>price: </span>{{product.price * product.quantity}}</div>
+  <div>
+    <label>quantity: 
+      <input 
+        [(ngModel)]="product.quantity" 
+        placeholder="quantity" 
+        type="number" 
+        autofocus/>
+    </label>
+  </div>
+</div>

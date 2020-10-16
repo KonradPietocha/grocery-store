@@ -5,18 +5,23 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { GroceriesComponent } from './groceries/groceries.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GroceriesComponent
+    GroceriesComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,18 +8,4 @@
     <span class="badge badge-price">{{product.price}} PLN</span>
   </li>
 </ul>
-<div *ngIf="selectedProduct" class="selected-product">
-  <h2>{{selectedProduct.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedProduct.id}}</div>
-  <div><span>name: </span>{{selectedProduct.name}}</div>
-  <div><span>price: </span>{{selectedProduct.price * selectedProduct.quantity}}</div>
-  <div>
-    <label>quantity: 
-      <input 
-        [(ngModel)]="selectedProduct.quantity" 
-        placeholder="quantity" 
-        type="number" 
-        autofocus/>
-    </label>
-  </div>
-</div>
+<app-product-details [product]="selectedProduct"></app-product-details>
