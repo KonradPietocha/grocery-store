@@ -6,21 +6,30 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { GroceriesComponent } from './groceries/groceries.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { MessagesComponent } from './messages/messages.component';
+import { TopbarComponent } from './topbar/topbar.component';
+
+import { AppRoutingModule } from './app-routing.module';
 import { ProductService } from './product.service';
+import { MessagesService } from './messages.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     GroceriesComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    MessagesComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [
-    ProductService
+    ProductService,
+    MessagesService
   ],
   bootstrap: [AppComponent]
 })

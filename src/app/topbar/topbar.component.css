@@ -1,0 +1,21 @@
+.nav-topbar {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: center;
+  background-color: #006420;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+
+.nav-topbar__link {
+  padding: 6px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

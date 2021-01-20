@@ -1,57 +1,56 @@
 h2 {
-  color:#006420;
+  color: #006420;
 }
 .groceries {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-    color:#43b649;
-  }
-  .groceries li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: #EEE;
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
-    border-radius: 4px;
-  }
-  .groceries li:hover {
-    color: #607D8B;
-    background-color: #DDD;
-    left: .1em;
-  }
-  .groceries li.selected {
-    background-color: #CFD8DC;
-    color:#006420;
-    border: 1px solid #006420;
-  }
-  .groceries li.selected:hover {
-    background-color: #BBD8DC;
-    color: white;
-  }
-  .groceries .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color:#006420;
-    line-height: 1em;
-    position: relative;
-  }
-  .groceries .badge-id {
-    height: 1.8em;
-    width: 1em;
-    border-radius: 4px 0 0 4px;
-  }
-  .groceries .badge-price {
-    height: 1.8em;
-    width: 4em;
-    border-radius: 0 4px 4px 0;
-  }
-
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+  color: #43b649;
+}
+.groceries li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #eee;
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.groceries li:hover {
+  color: #607d8b;
+  background-color: #ddd;
+  left: 0.1em;
+}
+.groceries li.selected {
+  background-color: #cfd8dc;
+  color: #006420;
+  border: 1px solid #006420;
+}
+.groceries li.selected:hover {
+  background-color: #bbd8dc;
+  color: white;
+}
+.groceries .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #006420;
+  line-height: 1em;
+  position: relative;
+}
+.groceries .badge-id {
+  height: 1.8em;
+  width: 1em;
+  border-radius: 4px 0 0 4px;
+}
+.groceries .badge-price {
+  height: 1.8em;
+  width: 4em;
+  border-radius: 0 4px 4px 0;
+}

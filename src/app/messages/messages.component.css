@@ -1,0 +1,7 @@
+.messages {
+  width: calc(90vw - 16px);
+  background-color: #006420;
+  color: white;
+  text-align: center;
+  border-radius: 0.5em;
+}
