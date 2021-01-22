@@ -1,11 +1,9 @@
 <h2>Products:</h2>
 <ul class="groceries">
-  <li 
-    *ngFor="let product of products"
-    [class.selected]="product === selectedProduct" 
-    (click)="onSelect(product)">
-    <span class="badge badge-id">{{product.id}}</span> {{product.name}}
-    <span class="badge badge-price">{{product.price}} PLN</span>
+  <li *ngFor="let product of products">
+    <a routerLink="/detail/{{ product.id }}">
+      <span class="badge badge-id">{{ product.id }}</span> {{ product.name }}
+      <span class="badge badge-price">{{ product.price }} PLN</span>
+    </a>
   </li>
 </ul>
-<app-product-details [product]="selectedProduct"></app-product-details>

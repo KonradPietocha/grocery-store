@@ -1,3 +1,7 @@
 .selected-product {
+  background-color: white;
   color: #006420;
+  border-radius: 6px;
+  padding: 5px 20px 20px 20px;
+  margin-top: 50%;
 }

@@ -6,9 +6,10 @@ h2 {
   list-style-type: none;
   padding: 0;
   width: 15em;
-  color: #43b649;
 }
-.groceries li {
+.groceries a {
+  text-decoration: none;
+  color: #43b649;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,17 +22,17 @@ h2 {
   height: 1.6em;
   border-radius: 4px;
 }
-.groceries li:hover {
+.groceries a:hover {
   color: #607d8b;
   background-color: #ddd;
   left: 0.1em;
 }
-.groceries li.selected {
+.groceries a.selected {
   background-color: #cfd8dc;
   color: #006420;
   border: 1px solid #006420;
 }
-.groceries li.selected:hover {
+.groceries a.selected:hover {
   background-color: #bbd8dc;
   color: white;
 }

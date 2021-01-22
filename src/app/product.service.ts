@@ -15,6 +15,11 @@ export class ProductService {
     return of(PRODUCTS);
   }
 
+  getProduct(id: number): Observable<Product> {
+    this.messagesService.add(`ProductSetvice: fetched product id=${id}`);
+    return of(PRODUCTS.find(product => product.id === id));
+  }
+
   constructor(private messagesService: MessagesService) { }
 
 }

@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 
 import { ProductService } from '../product.service';
-import { MessagesService } from '../messages.service';
 
 @Component({
   selector: 'app-groceries',
@@ -13,20 +12,13 @@ import { MessagesService } from '../messages.service';
 export class GroceriesComponent implements OnInit {
 
   products: Product[];
-  selectedProduct: Product;
 
   constructor(
-    private productService: ProductService,
-    private messagesService: MessagesService
+    private productService: ProductService
   ) { }
 
   ngOnInit() {
     this.getProducts();
-  }
-
-  onSelect(product: Product): void {
-    this.selectedProduct = product;
-    this.messagesService.add(`GroceriesComponent: Selected product id = ${product.id}`);
   }
 
   getProducts(): void {

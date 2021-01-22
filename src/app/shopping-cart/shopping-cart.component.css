@@ -1,0 +1,11 @@
+.shopping {
+  margin-top: 50%;
+}
+
+.shopping__link {
+  text-decoration: none;
+}
+
+.shopping__emo {
+  font-size: 100px;
+}
