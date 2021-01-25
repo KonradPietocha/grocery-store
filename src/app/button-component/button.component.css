@@ -2,11 +2,13 @@
   cursor: pointer;
   color: #006420;
   background-color: white;
+  border: 1px solid #006420;
   border-radius: 6px;
   padding: 6px;
 }
 
 .button:hover {
   background-color: #006420;
+  border: 1px solid white;
   color: white;
 }

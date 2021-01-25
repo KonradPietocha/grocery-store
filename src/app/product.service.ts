@@ -9,14 +9,15 @@ import { of } from 'rxjs/observable/of';
 
 @Injectable()
 export class ProductService {
+  getDate: string = new Date().toLocaleString('en-GB');
 
   getProducts(): Observable<Product[]> {
-    this.messagesService.add('Your favorite products have been downloaded');
+    this.messagesService.add(`${this.getDate}: Your favorite products have been downloaded`);
     return of(PRODUCTS);
   }
 
   getProduct(id: number): Observable<Product> {
-    this.messagesService.add(`Selected product number: ${id}`);
+    this.messagesService.add(`${this.getDate}: Selected product number: ${id}`);
     return of(PRODUCTS.find(product => product.id === id));
   }
 

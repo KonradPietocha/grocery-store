@@ -4,4 +4,9 @@
   color: white;
   text-align: center;
   border-radius: 0.5em;
+  padding: 6px;
+}
+
+.message {
+  text-align: start;
 }

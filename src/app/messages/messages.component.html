@@ -1,7 +1,10 @@
 <div *ngIf="messagesService.messages.length" class="messages">
   <h2>Messages</h2>
-  <button class="clear" (click)="messagesService.clear()">clear</button>
-  <div *ngFor="let message of messagesService.messages">
+  <div *ngFor="let message of messagesService.messages" class="message">
     {{ message }}
   </div>
+  <app-button
+    [title]="'clear history'"
+    (click)="messagesService.clear()"
+  ></app-button>
 </div>

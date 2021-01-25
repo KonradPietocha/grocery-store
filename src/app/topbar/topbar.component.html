@@ -3,13 +3,13 @@
   <a class="nav-topbar__link" routerLink="/groceries">Your favorite products</a>
   <a class="nav-topbar__link" routerLink="/shopping">
     Shopping List
-    <div *ngIf="shoppingService.shoppingList.length" class="messages-counter">
+    <div *ngIf="shoppingService.shoppingList.length" class="items-quantity">
       {{ shoppingService.shoppingList.length }}
     </div>
   </a>
   <a class="nav-topbar__link" routerLink="/messages">
-    Messages
-    <div *ngIf="messagesService.messages.length" class="messages-counter">
+    Message history
+    <div *ngIf="messagesService.messages.length" class="items-quantity">
       {{ messagesService.messages.length }}
     </div>
   </a>
