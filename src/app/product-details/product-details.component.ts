@@ -1,8 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { ProductService } from '../product.service';
+import { ShoppingService } from '../shopping.service';
 import { Product } from '../product';
 
 @Component({
@@ -17,7 +18,8 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
-    private location: Location
+    private location: Location,
+    private shoppingService: ShoppingService
   ) { }
 
   ngOnInit(): void {
@@ -31,6 +33,7 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   addToCart(): void {
+    this.shoppingService.add(this.product);
     this.location.back();
   }
 

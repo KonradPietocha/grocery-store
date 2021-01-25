@@ -1,5 +1,16 @@
 <nav class="nav-topbar">
   <a class="nav-topbar__link" routerLink="/">Home</a>
   <a class="nav-topbar__link" routerLink="/groceries">Your favorite products</a>
-  <a class="nav-topbar__link" routerLink="/messages">Messages</a>
+  <a class="nav-topbar__link" routerLink="/shopping">
+    Shopping List
+    <div *ngIf="shoppingService.shoppingList.length" class="messages-counter">
+      {{ shoppingService.shoppingList.length }}
+    </div>
+  </a>
+  <a class="nav-topbar__link" routerLink="/messages">
+    Messages
+    <div *ngIf="messagesService.messages.length" class="messages-counter">
+      {{ messagesService.messages.length }}
+    </div>
+  </a>
 </nav>

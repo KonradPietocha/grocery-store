@@ -9,10 +9,13 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { MessagesComponent } from './messages/messages.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { ShoppingCart } from './shopping-cart/shopping-cart.component';
+import { ButtonComponent } from './button-component/button.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ProductService } from './product.service';
 import { MessagesService } from './messages.service';
+import { ShoppingService } from './shopping.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { MessagesService } from './messages.service';
     ProductDetailsComponent,
     MessagesComponent,
     TopbarComponent,
-    ShoppingCart
+    ShoppingCart,
+    ButtonComponent,
+    ShoppingListComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,8 @@ import { MessagesService } from './messages.service';
   ],
   providers: [
     ProductService,
-    MessagesService
+    MessagesService,
+    ShoppingService
   ],
   bootstrap: [AppComponent]
 })

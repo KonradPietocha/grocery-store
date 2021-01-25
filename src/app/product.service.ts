@@ -11,12 +11,12 @@ import { of } from 'rxjs/observable/of';
 export class ProductService {
 
   getProducts(): Observable<Product[]> {
-    this.messagesService.add('ProductService: fetched products');
+    this.messagesService.add('Your favorite products have been downloaded');
     return of(PRODUCTS);
   }
 
   getProduct(id: number): Observable<Product> {
-    this.messagesService.add(`ProductSetvice: fetched product id=${id}`);
+    this.messagesService.add(`Selected product number: ${id}`);
     return of(PRODUCTS.find(product => product.id === id));
   }
 
