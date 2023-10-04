@@ -16,9 +16,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProductService } from './product.service';
 import { MessagesService } from './messages.service';
 import { ShoppingService } from './shopping.service';
+import { SumProductsPipe } from './shopping-list/sum-products.pipe';
 
 @NgModule({
   declarations: [
+    SumProductsPipe,
     AppComponent,
     GroceriesComponent,
     ProductDetailsComponent,

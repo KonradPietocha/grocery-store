@@ -1,1 +1,1 @@
-<button *ngIf="title" class="button">{{ title }}</button>
+<button *ngIf="title" [ngClass]="isWarning ? 'button-warning' : 'button'">{{ title }}</button>

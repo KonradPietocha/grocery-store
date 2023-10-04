@@ -18,9 +18,5 @@ export class ShoppingService {
         this.shoppingList = [];
     }
 
-    getSum() {
-        return this.shoppingList.reduce((a, b) => a + (b.price * b.quantity), 0);
-    }
-
     constructor(private messagesService: MessagesService) { }
 }

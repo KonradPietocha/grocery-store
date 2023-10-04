@@ -12,3 +12,18 @@
   border: 1px solid white;
   color: white;
 }
+
+.button-warning {
+  cursor: pointer;
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.button-warning:hover {
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+}
