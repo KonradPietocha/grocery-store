@@ -16,7 +16,11 @@
       />
     </label>
   </div>
+  <p *ngIf="product.quantity < 0" class="error-message">
+    The value should be positive
+  </p>
   <app-button
+    *ngIf="!(product.quantity < 0)"
     [title]="'add the product to the cart'"
     (click)="addToCart()"
   ></app-button>

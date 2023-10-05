@@ -13,3 +13,10 @@
 .input {
   width: 50px;
 }
+
+.error-message {
+  color: red;
+  font-size: 15px;
+  padding: 6px 0;
+  margin: 1px 0;
+}
