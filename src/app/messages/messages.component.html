@@ -3,10 +3,9 @@
   <div *ngFor="let message of messagesService.messages" class="message">
     {{ message }}
   </div>
-  <app-button
-    [title]="'clear history'"
-    (click)="messagesService.clear()"
-  ></app-button>
+  <app-button (click)="messagesService.clear()">
+    clear history
+  </app-button>
 </div>
 <div *ngIf="!messagesService.messages?.length" class="messages">
   <h2>Your message list is empty</h2>

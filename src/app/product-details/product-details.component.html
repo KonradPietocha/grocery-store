@@ -21,7 +21,6 @@
   </p>
   <app-button
     *ngIf="!(product.quantity < 0)"
-    [title]="'add the product to the cart'"
     (click)="addToCart()"
-  ></app-button>
+  >add the product to the cart</app-button>
 </div>

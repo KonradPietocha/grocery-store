@@ -10,14 +10,12 @@
   </div>
   <h2>Sum: {{ shoppingList | sumProducts }} PLN</h2>
   <app-button
-    [isWarning]="true"
-    [title]="'clear shopping list'"
+    [type]="'danger'"
     (click)="clearProducts()"
-  ></app-button>
+  >clear shopping list</app-button>
   <app-button
-    [title]="'buy products'"
     (click)="buyProducts()"
-  ></app-button>
+  >buy products</app-button>
 </div>
 <div *ngIf="!shoppingList?.length && wereBought" class="shopping-list">
   <h2>The products will be delivered to your home</h2>

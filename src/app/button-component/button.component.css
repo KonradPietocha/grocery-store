@@ -13,7 +13,7 @@
   color: white;
 }
 
-.button-warning {
+.button--danger {
   cursor: pointer;
   color: red;
   background-color: white;
@@ -22,7 +22,7 @@
   padding: 6px;
 }
 
-.button-warning:hover {
+.button--danger:hover {
   background-color: red;
   border: 1px solid white;
   color: white;
