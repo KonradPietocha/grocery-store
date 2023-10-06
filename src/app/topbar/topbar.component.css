@@ -14,7 +14,6 @@
 
 .nav-topbar__link {
   display: flex;
-  padding: 5px 20px;
   color: white;
 }
 
@@ -29,4 +28,24 @@
 
 a {
   text-decoration: none;
+}
+
+.link {
+  display: block;
+  padding: 5px 20px;
+}
+
+.link--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 660px) {
+  .link {
+    display: none;
+  }
+
+  .link--mobile {
+    display: block;
+    padding: 5px;
+  }
 }

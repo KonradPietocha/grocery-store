@@ -1,14 +1,22 @@
 <nav class="nav-topbar">
-  <a class="nav-topbar__link" routerLink="/">Home</a>
-  <a class="nav-topbar__link" routerLink="/groceries">Your favorite products</a>
+  <a class="nav-topbar__link" routerLink="/">
+    <span class="link">Home</span>
+    <span class="link--mobile material-icons">storefront</span>
+  </a>
+  <a class="nav-topbar__link" routerLink="/groceries">
+    <span class="link">Your favorite products</span>
+    <span class="link--mobile material-icons">add_shopping_cart</span>
+  </a>
   <a class="nav-topbar__link" routerLink="/shopping">
-    Shopping List
+    <span class="link">Shopping List</span>
+    <span class="link--mobile material-icons">shopping_cart_checkout</span>
     <div *ngIf="shoppingService.shoppingList.length" class="items-quantity">
       {{ shoppingService.shoppingList.length }}
     </div>
   </a>
   <a class="nav-topbar__link" routerLink="/messages">
-    Message history
+    <span class="link">Message history</span>
+    <span class="link--mobile material-icons">receipt_long</span>
     <div *ngIf="messagesService.messages.length" class="items-quantity">
       {{ messagesService.messages.length }}
     </div>
