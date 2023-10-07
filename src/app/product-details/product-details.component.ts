@@ -37,4 +37,7 @@ export class ProductDetailsComponent implements OnInit {
     this.location.back();
   }
 
+  cancelAdding(): void {
+    this.location.back();
+  }
 }

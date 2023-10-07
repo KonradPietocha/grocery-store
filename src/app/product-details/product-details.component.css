@@ -6,6 +6,15 @@
   margin-top: 50%;
 }
 
+.selected-product-tool {
+  display: flex;
+  justify-content: end;
+}
+
+.selected-product-tool button {
+  cursor: pointer;
+}
+
 .selected-product > div {
   margin: 4px;
 }

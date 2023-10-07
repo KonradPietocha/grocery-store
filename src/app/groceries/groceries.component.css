@@ -1,14 +1,23 @@
 h2 {
   color: #006420;
+  text-align: center;
 }
 .groceries {
-  margin: 0 0 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
+  width: 90vw;
   padding: 0;
-  width: 15em;
 }
 .groceries a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+}
+.groceries-description {
   color: #43b649;
   display: flex;
   justify-content: space-between;
@@ -17,22 +26,21 @@ h2 {
   position: relative;
   left: 0;
   background-color: #eee;
-  margin: 0.5em;
   padding: 0.3em 0;
   height: 1.6em;
   border-radius: 4px;
 }
-.groceries a:hover {
+.groceries-description:hover {
   color: #607d8b;
   background-color: #ddd;
   left: 0.1em;
 }
-.groceries a.selected {
+.groceries-description.selected {
   background-color: #cfd8dc;
   color: #006420;
   border: 1px solid #006420;
 }
-.groceries a.selected:hover {
+.groceries-description.selected:hover {
   background-color: #bbd8dc;
   color: white;
 }
@@ -49,9 +57,15 @@ h2 {
   height: 1.8em;
   width: 1em;
   border-radius: 4px 0 0 4px;
+  margin-right: 5px;
 }
 .groceries .badge-price {
   height: 1.8em;
   width: 4em;
   border-radius: 0 4px 4px 0;
+  margin-left: 5px;
+}
+.images {
+  width: 50px;
+  height: 50px;
 }

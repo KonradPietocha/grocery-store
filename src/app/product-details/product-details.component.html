@@ -1,4 +1,7 @@
 <div *ngIf="product" class="selected-product">
+  <div class="selected-product-tool">
+    <button (click)="cancelAdding()">X</button>
+  </div>
   <h2>{{ product.name | uppercase }} Details</h2>
   <div><span>id: </span>{{ product.id }}</div>
   <div><span>name: </span>{{ product.name }}</div>
@@ -16,11 +19,11 @@
       />
     </label>
   </div>
-  <p *ngIf="product.quantity < 0" class="error-message">
-    The value should be positive
+  <p *ngIf="!(product.quantity > 0)" class="error-message">
+    The value should be greater than zero 
   </p>
   <app-button
-    *ngIf="!(product.quantity < 0)"
+    *ngIf="product.quantity > 0"
     (click)="addToCart()"
   >add the product to the cart</app-button>
 </div>

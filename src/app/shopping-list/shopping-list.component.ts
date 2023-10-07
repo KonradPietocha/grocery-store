@@ -25,7 +25,7 @@ export class ShoppingListComponent implements OnInit {
   }
 
   buyProducts(): void {
-    this._shoppingService.clearAll();
+    this._shoppingService.clearAll(true);
     this.shoppingList = this._shoppingService.shoppingList;
     this.wereBought = true;
   }

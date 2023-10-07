@@ -13,8 +13,12 @@ export class ShoppingService {
         this.shoppingList.push(product);
     }
 
-    clearAll() {
-        this.messagesService.add(`${this.getDate}: You clear all your shopping list`);
+    clearAll(wereBought?: boolean) {
+        this.messagesService.add(
+            wereBought
+                ? `${this.getDate}: You have purchased all selected products`
+                : `${this.getDate}: You clear all your shopping list`
+        );
         this.shoppingList = [];
     }
 

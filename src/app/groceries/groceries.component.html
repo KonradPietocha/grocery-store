@@ -2,8 +2,15 @@
 <ul class="groceries">
   <li *ngFor="let product of products">
     <a routerLink="/detail/{{ product.id }}">
-      <span class="badge badge-id">{{ product.id }}</span> {{ product.name }}
-      <span class="badge badge-price">{{ product.price }} PLN</span>
+      <img
+          class="images"
+          [src]="product.imgSrc"
+          [alt]="product.name">
+      <div class="groceries-description">
+        <span class="badge badge-id">{{ product.id }}</span>
+        {{ product.name }}
+        <span class="badge badge-price">{{ product.price }} PLN</span>
+      </div>
     </a>
   </li>
 </ul>
