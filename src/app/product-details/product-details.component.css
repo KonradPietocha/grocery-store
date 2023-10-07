@@ -8,7 +8,7 @@
 
 .selected-product-tool {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .selected-product-tool button {
