@@ -3,7 +3,7 @@
   <li *ngFor="let product of products">
     <a routerLink="/detail/{{ product.id }}">
       <img class="images"
-          src="/src/assets/images/{{ product.fileName }}">
+          src="assets/images/{{ product.fileName }}">
       <div class="groceries-description">
         <span class="badge badge-id">{{ product.id }}</span>
         {{ product.name }}
