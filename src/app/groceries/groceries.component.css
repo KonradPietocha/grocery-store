@@ -5,7 +5,7 @@ h2 {
 .groceries {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   list-style-type: none;
   width: 90vw;
   padding: 0;
