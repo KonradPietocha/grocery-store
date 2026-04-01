@@ -4,11 +4,10 @@ import { ButtonComponent } from '../button-component/button.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  standalone: true,
-  imports: [ButtonComponent, CommonModule],
-  selector: 'app-messages',
-  templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.css']
+    imports: [ButtonComponent, CommonModule],
+    selector: 'app-messages',
+    templateUrl: './messages.component.html',
+    styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent {
 

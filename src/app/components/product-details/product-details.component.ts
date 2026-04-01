@@ -8,11 +8,10 @@ import { ButtonComponent } from '../button-component/button.component';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  standalone: true,
-  imports: [ButtonComponent, UpperCasePipe, CommonModule, FormsModule],
-  selector: 'app-product-details',
-  templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css']
+    imports: [ButtonComponent, UpperCasePipe, CommonModule, FormsModule],
+    selector: 'app-product-details',
+    templateUrl: './product-details.component.html',
+    styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product = {} as Product;

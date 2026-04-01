@@ -6,11 +6,10 @@ import { SumProductsPipe } from './sum-products.pipe';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  standalone: true,
-  imports: [ButtonComponent, SumProductsPipe, CommonModule],
-  selector: 'app-shopping-list',
-  templateUrl: './shopping-list.component.html',
-  styleUrls: ['./shopping-list.component.css']
+    imports: [ButtonComponent, SumProductsPipe, CommonModule],
+    selector: 'app-shopping-list',
+    templateUrl: './shopping-list.component.html',
+    styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
   shoppingList: Product[] = [];

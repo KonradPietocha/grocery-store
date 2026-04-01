@@ -5,11 +5,10 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  selector: 'app-groceries',
-  templateUrl: './groceries.component.html',
-  styleUrls: ['./groceries.component.css']
+    imports: [CommonModule, RouterModule],
+    selector: 'app-groceries',
+    templateUrl: './groceries.component.html',
+    styleUrls: ['./groceries.component.css']
 })
 export class GroceriesComponent implements OnInit {
 
