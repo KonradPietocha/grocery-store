@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ShoppingCart } from './components/shopping-cart/shopping-cart.component';
 import { GroceriesComponent } from './components/groceries/groceries.component';
 import { MessagesComponent } from './components/messages/messages.component';
@@ -13,3 +13,5 @@ export const routes: Routes = [
     { path: 'shopping', component: ShoppingListComponent },
     { path: 'detail/:id', component: ProductDetailsComponent }
 ];
+
+export const routing = RouterModule.forRoot(routes)

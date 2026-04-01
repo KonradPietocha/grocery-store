@@ -11,6 +11,7 @@ import { ProductService } from './common-services/product-service/product.servic
 import { MessagesService } from './common-services/messages-service/messages.service';
 import { ShoppingService } from './common-services/shopping-service/shopping.service';
 import { CommonModule } from '@angular/common';
+import { routing } from './app.routes';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { CommonModule } from '@angular/common';
     MessagesComponent,
     ShoppingListComponent,
     ProductDetailsComponent,
+    routing
   ],
   providers: [ProductService, MessagesService, ShoppingService],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TopbarComponent } from './topbar.component';
+import { RouterModule } from '@angular/router';
 
 describe('TopbarComponent', () => {
   let component: TopbarComponent;
@@ -8,7 +9,7 @@ describe('TopbarComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [TopbarComponent]
+      imports: [TopbarComponent, RouterModule.forRoot([])]
     })
       .compileComponents();
   }));

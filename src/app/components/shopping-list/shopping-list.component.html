@@ -1,4 +1,4 @@
-@if (shoppingList?.length) {
+@if (shoppingList.length) {
   <div class="shopping-list">
     <h2>Shopping list</h2>
     @for (product of shoppingList; track product) {
@@ -20,14 +20,14 @@
     >buy products</app-button>
   </div>
 }
-@if (!shoppingList?.length && wereBought) {
+@if (!shoppingList.length && wereBought) {
   <div class="shopping-list">
     <h2>Shopping is coming to you.</h2>
     <h2>Payment on delivery.</h2>
     <span class="material-icons shopping-list_icon">local_shipping</span>
   </div>
 }
-@if (!shoppingList?.length && !wereBought) {
+@if (!shoppingList.length && !wereBought) {
   <div class="shopping-list">
     <h2>Your shopping list is empty</h2>
     <span class="material-icons shopping-list_icon">playlist_remove</span>
