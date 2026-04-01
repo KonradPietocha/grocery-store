@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { MessagesService } from '../../common-services/messages-service/messages.service';
 import { ButtonComponent } from '../button-component/button.component';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
-    imports: [ButtonComponent, CommonModule],
+    imports: [ButtonComponent],
     selector: 'app-messages',
     templateUrl: './messages.component.html',
     styleUrls: ['./messages.component.css']

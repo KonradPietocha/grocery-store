@@ -3,10 +3,10 @@ import { ShoppingService } from '../../common-services/shopping-service/shopping
 import { Product } from '../../product';
 import { ButtonComponent } from '../button-component/button.component';
 import { SumProductsPipe } from './sum-products.pipe';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
-    imports: [ButtonComponent, SumProductsPipe, CommonModule],
+    imports: [ButtonComponent, SumProductsPipe],
     selector: 'app-shopping-list',
     templateUrl: './shopping-list.component.html',
     styleUrls: ['./shopping-list.component.css']

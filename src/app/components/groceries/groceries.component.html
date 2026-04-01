@@ -1,14 +1,16 @@
 <h2>Products:</h2>
 <ul class="groceries">
-  <li *ngFor="let product of products">
-    <a routerLink="/detail/{{ product.id }}">
-      <img class="images"
+  @for (product of products; track product) {
+    <li>
+      <a routerLink="/detail/{{ product.id }}">
+        <img class="images"
           src="assets/images/{{ product.fileName }}">
-      <div class="groceries-description">
-        <span class="badge badge-id">{{ product.id }}</span>
-        {{ product.name }}
-        <span class="badge badge-price">{{ product.price }} PLN</span>
-      </div>
-    </a>
-  </li>
-</ul>
+          <div class="groceries-description">
+            <span class="badge badge-id">{{ product.id }}</span>
+            {{ product.name }}
+            <span class="badge badge-price">{{ product.price }} PLN</span>
+          </div>
+        </a>
+      </li>
+    }
+  </ul>

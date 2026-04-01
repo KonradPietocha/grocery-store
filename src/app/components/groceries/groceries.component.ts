@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../product';
 import { ProductService } from '../../common-services/product-service/product.service';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
-    imports: [CommonModule, RouterModule],
+    imports: [RouterModule],
     selector: 'app-groceries',
     templateUrl: './groceries.component.html',
     styleUrls: ['./groceries.component.css']

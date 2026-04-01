@@ -10,15 +10,19 @@
   <a class="nav-topbar__link" routerLink="/shopping">
     <span class="link">Shopping list</span>
     <span class="link--mobile material-icons">shopping_cart_checkout</span>
-    <div *ngIf="shoppingService.shoppingList.length" class="items-quantity">
-      {{ shoppingService.shoppingList.length }}
-    </div>
+    @if (shoppingService.shoppingList.length) {
+      <div class="items-quantity">
+        {{ shoppingService.shoppingList.length }}
+      </div>
+    }
   </a>
   <a class="nav-topbar__link" routerLink="/messages">
     <span class="link">Notifications</span>
     <span class="link--mobile material-icons">receipt_long</span>
-    <div *ngIf="messagesService.messages.length" class="items-quantity">
-      {{ messagesService.messages.length }}
-    </div>
+    @if (messagesService.messages.length) {
+      <div class="items-quantity">
+        {{ messagesService.messages.length }}
+      </div>
+    }
   </a>
 </nav>
