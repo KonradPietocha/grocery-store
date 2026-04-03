@@ -1,10 +1,13 @@
 body {
+  font-family: auto;
   margin: 0;
   padding: 0;
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background-image: url(./assets/images/market.jpg);
+  background-size: cover;
 }
 
 app-root {

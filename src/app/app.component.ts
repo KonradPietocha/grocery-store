@@ -11,5 +11,5 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     providers: [AppModule]
 })
 export class AppComponent {
-  title = 'Grocery Store';
+  title = 'Your favorite grocery store';
 }

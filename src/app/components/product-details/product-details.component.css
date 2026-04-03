@@ -3,7 +3,9 @@
   color: #006420;
   border-radius: 6px;
   padding: 5px 20px 20px 20px;
-  margin-top: 50%;
+  position: absolute;
+  left: 25%;
+  width: 50%;
 }
 
 .selected-product-tool {

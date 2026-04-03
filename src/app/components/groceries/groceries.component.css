@@ -18,6 +18,7 @@ h2 {
   margin: 0.5em;
 }
 .groceries-description {
+  font-size: 20px;
   color: #43b649;
   display: flex;
   justify-content: space-between;
@@ -26,8 +27,8 @@ h2 {
   position: relative;
   left: 0;
   background-color: #eee;
-  padding: 0.3em 0;
-  height: 1.6em;
+  padding: 0.3em;
+  height: 2.6em;
   border-radius: 4px;
 }
 .groceries-description:hover {
@@ -46,7 +47,7 @@ h2 {
 }
 .groceries .badge {
   display: inline-block;
-  font-size: small;
+  font-size: 20px;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
   background-color: #006420;
@@ -66,6 +67,5 @@ h2 {
   margin-left: 5px;
 }
 .images {
-  width: 50px;
-  height: 50px;
+  width: 25%;
 }

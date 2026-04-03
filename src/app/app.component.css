@@ -1,13 +1,14 @@
 h1 {
   color: #006420;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+  font-size: 65px;
   margin: 50px 0 0 0;
+  text-align: center;
+  text-justify: inter-word;
 }
+
 h2,
 h3 {
   color: #43b649;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 
@@ -15,8 +16,4 @@ body,
 input[type="text"],
 button {
   color: #333;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-* {
-  font-family: Arial, Helvetica, sans-serif;
 }
