@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "deploy": "ng deploy",
+    "build": "ng build --output-path docs --base-href /grocery-store/",
+    "deploy": "ng deploy --base-href=/grocery-store/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "github-build": "ng build --configuration production --base-href 'https://konradpietocha.github.io/grocery-store/home'"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
