@@ -16,14 +16,19 @@
       (click)="clearProducts()"
     >clear shopping list</app-button>
     <app-button
-      (click)="buyProducts()"
+      (click)="openForm()"
     >buy products</app-button>
   </div>
+  @if (showCheckoutForm) {
+    <app-checkout-form
+      (submitted)="onCheckoutSubmit($event)"
+      (closed)="onCheckoutClosed()"
+    ></app-checkout-form>
+  }
 }
 @if (!shoppingList.length && wereBought) {
   <div class="shopping-list">
     <h2>Shopping is coming to you.</h2>
-    <h2>Payment on delivery.</h2>
     <span class="material-icons shopping-list_icon">local_shipping</span>
   </div>
 }

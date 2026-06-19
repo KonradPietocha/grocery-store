@@ -1,0 +1,85 @@
+<div class="checkout-overlay">
+  <div class="checkout-modal">
+    <button class="close-btn" (click)="onCancel()">✕</button>
+    
+    <div class="checkout-header">
+      <div class="checkout-icon">🛍️</div>
+      <h2>Complete Your Order</h2>
+    </div>
+
+    <form class="checkout-form" (ngSubmit)="onSubmit()">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-input"
+          [(ngModel)]="formData.name"
+          name="name"
+          placeholder="Enter your first name"
+        />
+      </div>
+
+      <!-- Surname Field -->
+      <div class="form-group">
+        <label for="surname">Last Name</label>
+        <input
+          type="text"
+          id="surname"
+          class="form-input"
+          [(ngModel)]="formData.surname"
+          name="surname"
+          placeholder="Enter your last name"
+        />
+      </div>
+
+      <!-- Address Field -->
+      <div class="form-group">
+        <label for="address">Delivery Address</label>
+        <textarea
+          id="address"
+          class="form-input form-textarea"
+          [(ngModel)]="formData.address"
+          name="address"
+          placeholder="Enter your delivery address"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <!-- Payment Method Field -->
+      <div class="form-group">
+        <label for="payment">Payment Method</label>
+        <select
+          id="payment"
+          class="form-input form-select"
+          [(ngModel)]="formData.paymentMethod"
+          name="paymentMethod"
+        >
+          <option value="">-- Choose a payment method --</option>
+          <option *ngFor="let method of paymentMethods" [value]="method.value">
+            {{ method.label }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="form-actions">
+        <button
+          type="button"
+          class="btn-cancel"
+          (click)="onCancel()"
+        >
+          Cancel
+        </button>
+        <button
+          type="submit"
+          class="btn-submit"
+          [disabled]="!isFormValid()"
+        >
+          Complete Purchase 🚀
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
