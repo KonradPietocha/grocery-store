@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -13,6 +13,7 @@ interface CheckoutData {
   selector: 'app-checkout-form',
   imports: [CommonModule, FormsModule],
   templateUrl: './checkout-form.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './checkout-form.component.css'
 })
 export class CheckoutFormComponent {

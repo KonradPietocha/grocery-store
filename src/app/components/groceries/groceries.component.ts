@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Product } from '../../product';
 import { ProductService } from '../../common-services/product-service/product.service';
 import { RouterModule } from '@angular/router';
@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
     imports: [RouterModule],
     selector: 'app-groceries',
     templateUrl: './groceries.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./groceries.component.css']
 })
 export class GroceriesComponent implements OnInit {

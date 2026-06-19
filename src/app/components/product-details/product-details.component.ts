@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule, Location, UpperCasePipe } from '@angular/common';
 import { ProductService } from '../../common-services/product-service/product.service';
@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
     imports: [ButtonComponent, UpperCasePipe, CommonModule, FormsModule],
     selector: 'app-product-details',
     templateUrl: './product-details.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {

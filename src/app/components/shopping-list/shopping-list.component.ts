@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ShoppingService } from '../../common-services/shopping-service/shopping.service';
 import { Product } from '../../product';
 import { ButtonComponent } from '../button-component/button.component';
@@ -10,6 +10,7 @@ import { SumProductsPipe } from './sum-products.pipe';
     imports: [ButtonComponent, CheckoutFormComponent, SumProductsPipe],
     selector: 'app-shopping-list',
     templateUrl: './shopping-list.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {

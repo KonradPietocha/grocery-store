@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { AppModule } from './app.module';
@@ -10,6 +10,7 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
     imports: [CommonModule, TopbarComponent, RouterOutlet, DisclaimerComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
+    changeDetection: ChangeDetectionStrategy.Eager,
     providers: [AppModule]
 })
 export class AppComponent {
