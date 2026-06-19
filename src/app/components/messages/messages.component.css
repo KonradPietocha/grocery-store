@@ -1,12 +1,17 @@
 .messages {
   width: 100%;
-  background-color: #006420;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
   color: white;
   text-align: center;
-  border-radius: 0.5em;
-  padding: 6px;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.2);
+  margin: 8px 0;
 }
 
 .message {
   text-align: start;
+  padding: 8px 0;
+  font-weight: 500;
+  line-height: 1.5;
 }

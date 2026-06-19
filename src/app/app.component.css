@@ -1,19 +1,28 @@
 h1 {
-  color: #006420;
-  font-size: 65px;
-  margin: 50px 0 0 0;
+  color: #065f46;
+  font-size: 54px;
+  margin: 0 0 20px 0;
   text-align: center;
-  text-justify: inter-word;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: 100%;
+  padding: 0 20px;
 }
 
 h2,
 h3 {
-  color: #43b649;
-  font-weight: lighter;
+  color: #059669;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 body,
 input[type="text"],
 button {
-  color: #333;
+  color: #1f2937;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

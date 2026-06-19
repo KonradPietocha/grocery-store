@@ -1,6 +1,9 @@
 h2 {
-  color: #006420;
+  color: #065f46;
   text-align: center;
+  font-size: 32px;
+  margin: 20px 0;
+  font-weight: 700;
 }
 .groceries {
   display: flex;
@@ -8,51 +11,60 @@ h2 {
   justify-content: center;
   list-style-type: none;
   width: 90vw;
-  padding: 0;
+  padding: 20px 0;
+  gap: 16px;
 }
 .groceries a {
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5em;
+  margin: 0;
 }
 .groceries-description {
-  font-size: 20px;
-  color: #43b649;
+  font-size: 16px;
+  color: #1f2937;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   position: relative;
-  left: 0;
-  background-color: #eee;
-  padding: 0.3em;
-  height: 2.6em;
-  border-radius: 4px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  padding: 12px 16px;
+  height: auto;
+  min-height: 2.8em;
+  border-radius: 8px;
+  border: 2px solid #d1fae5;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.08);
+  transition: all 0.3s ease;
 }
 .groceries-description:hover {
-  color: #607d8b;
-  background-color: #ddd;
-  left: 0.1em;
+  color: #059669;
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-color: #6ee7b7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.15);
 }
 .groceries-description.selected {
-  background-color: #cfd8dc;
-  color: #006420;
-  border: 1px solid #006420;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  border: 2px solid #059669;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
 }
 .groceries-description.selected:hover {
-  background-color: #bbd8dc;
-  color: white;
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  transform: translateY(-2px);
 }
 .groceries .badge {
   display: inline-block;
-  font-size: 20px;
+  font-size: 14px;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #006420;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
   line-height: 1em;
   position: relative;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
 }
 .groceries .badge-id {
   height: 1.8em;

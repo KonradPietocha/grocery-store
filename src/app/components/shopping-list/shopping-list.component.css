@@ -1,17 +1,28 @@
 .shopping-list {
   width: 90vw;
-  padding: 6px;
-  background-color: #006420;
+  padding: 16px;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
   color: white;
   text-align: center;
-  border-radius: 0.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.2);
+  margin: 12px 0;
 }
 
 .shopping-list__item {
-  border: 1px solid white;
-  border-radius: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.shopping-list__item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .shopping-list_icon {
   font-size: 40px;
+  margin-right: 8px;
 }

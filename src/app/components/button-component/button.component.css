@@ -1,29 +1,43 @@
 .button {
   cursor: pointer;
-  color: #006420;
-  background-color: white;
-  border: 1px solid #006420;
-  border-radius: 6px;
-  padding: 6px;
+  color: white;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+  transition: all 0.3s ease;
 }
 
 .button:hover {
-  background-color: #006420;
-  border: 1px solid white;
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+}
+
+.button:active {
+  transform: translateY(0);
 }
 
 .button--danger {
   cursor: pointer;
-  color: red;
-  background-color: white;
-  border: 1px solid red;
-  border-radius: 6px;
-  padding: 6px;
+  color: white;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  transition: all 0.3s ease;
 }
 
 .button--danger:hover {
-  background-color: red;
-  border: 1px solid white;
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+}
+
+.button--danger:active {
+  transform: translateY(0);
 }
